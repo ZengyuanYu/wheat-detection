@@ -18,8 +18,7 @@
      ```python
      def _prepare_data(img, img_transform, cfg, device):
         img = mmcv.imread(img)
-     def show_result_yu(img, result, dataset='coco', score_thr=0.3, 		 out_file=None, show=False):
-     函数具体实现
+     def show_result_yu(img, result, dataset='coco', score_thr=0.3, out_file=None, show=False):
      ```
 
 ### MxNet
