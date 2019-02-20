@@ -1,5 +1,5 @@
 ﻿### 利用目标检测算法完成麦穗计数
- 
+
 **实验表明，用不同的神经网络框架进行结果融合效果最好**
 
 **本工程意图使用mmdetection进行融合，只需要MxNet给出预测的坐标**
@@ -24,5 +24,17 @@
 
 ### MxNet
 - `inference_single_faster_rcnn.py` 利用训练模型完成单张图片的预测，并保存为 `txt` 文件
+
+- `inference_faster_rcnn_image_list.py` 利用训练模型完成测试集的预测，并保存预测结果和显示准确率
+
+  ```shell
+  python inference_fater_rcnn_image_list.py --network faster_rcnn_resnet101_v1d_custom
+  --model /home/yu/MxNet/model/fasterrcnn/faster_rcnn_resnet101_v1d_custom_epoch_300/faster_rcnn_resnet101_v1d_custom_best.params --save-path ../result/
+  
+  ```
+
+  
+
+  
 
 

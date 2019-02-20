@@ -20,7 +20,7 @@ _ = load_checkpoint(model, './data/result/cascade_rcnn_r101_wheat-little/epoch_9
 # test a list of images
 imgs = sorted(glob.glob('./data/coco-wheat/test/*.jpg'))
 
-for i, result in enumerate(inference_detector(model, imgs[:2], cfg, device='cuda:0')):
+for i, result in enumerate(inference_detector(model, imgs, cfg, device='cuda:0')):
     print(i, imgs[i])
     save_name = imgs[i].split('/')[-1]
     print(save_name)
