@@ -20,6 +20,10 @@
         img = mmcv.imread(img)
      def show_result_yu(img, result, dataset='coco', score_thr=0.3, out_file=None, show=False):
      ```
+  - my_config 训练模型文件
+    - `faster_rcnn_r101(50)_fpn_wheat` 在 `wheat` 数据上的模型
+    - `cascade_rcnn_r101_Soft_NMS_wheat` 更改 `NMS` 为 `Soft-NMS`
+    - `cascade_rcnn_r101_GNwheat` 更改 `BN` 为 `GN`
 
 ### MxNet
 - `inference_single_faster_rcnn.py` 利用训练模型完成单张图片的预测，并保存为 `txt` 文件
