@@ -41,6 +41,7 @@
 *一些目标检测相关的处理工具*
 
 - `plot_GT_bbox.py` 对标注好的数据进行可视化
+- `video2img&img2video.py` 视频转图像&图像转视频
   
 
   
